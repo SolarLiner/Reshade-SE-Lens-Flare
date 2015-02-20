@@ -335,7 +335,7 @@ float4 PassThrough(in float4 pos : SV_Position, in float2 coord : TEXCOORD) : SV
 	return tex2D(frameSampler, coord);
 }
 
-technique t0 < enabled = true; >
+technique t0 < enabled = true; toggle = 0x2D>
 {
 	pass PT
 	{
